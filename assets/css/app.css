@@ -1,0 +1,666 @@
+/*Contenedor. Aquí estarán todas las secciones de la página*/
+.container{
+	background-color: white;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Secciones de la página*/
+.sidebar{
+	width: 17%;
+	display: inline-block;
+	position: fixed;
+	height: 100%;
+	box-shadow: 2px 2px 5px #999;
+	overflow: auto;
+	background-color: white;
+}
+.home{
+	margin-left: 23%;
+	height: 800px;
+}
+.card{
+	position: absolute;
+	height: 550px;
+	width: 900px;
+	margin: 200px auto;
+	background-color: #FFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 2px 2px 5px #999;
+}
+.footerCard{
+	position: absolute;
+	top: 750px;
+	height: 100px;
+	width: 900px;
+	background-color: #4e89f5;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 2px 2px 5px #999;
+}
+.aboutMe{
+	margin-left: 23%;
+	padding-top: 150px;
+}
+.timelineV{
+	margin-left: 23%;
+	padding-top: 150px;
+}
+.timelineH{
+	margin-left: 23%;
+	padding-top: 150px;
+}
+.skills{
+	margin-left: 23%;
+	padding-top: 55px;
+}
+.expertise{
+	margin-left: 23%;
+	padding-top: 55px;
+}
+.work{
+	margin-left: 23%;
+	padding-top: 55px;	
+}
+.portfolio{
+	margin-left: 23%;
+	padding-top: 55px;	
+}
+.counter{
+	margin-left: 18%;
+	height: 100px;
+	margin-top: 100px;
+	display: flex;
+	background: blue;
+}
+
+/*Sección sidebar*/
+.sidebar img{
+	position: fixed;
+	top: 10%;
+	left: 3.5%;
+	margin: auto;
+	padding: auto;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+}
+.menu ul{
+	list-style: none;
+	margin: auto;
+	padding-left: 45px;
+	padding-top: 200px;
+}
+.menu li a{
+	color: black;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: inline-block;
+	font-family: Constantia;
+	font-size: 14px;
+}
+.copy label{
+	position: fixed;
+	top: 83%;
+	left: 2%;
+} 
+
+/*Sección principal (imagen de fondo)*/
+.backgroundImg img{
+	position: absolute;
+	left: 17.1%;
+	width:82.9%;
+	height:100%;
+	opacity: 0.7;
+}
+/*Sección tarjeta de presentación*/
+.left{
+	margin-left: 0px;
+}
+.left img{
+	position: absolute;
+	left: 5%;
+	top: 15%;
+	height: 70%;
+	width: 40%;
+	/*padding-top: 80px;
+	padding-left: 50px;*/
+	box-shadow: 2px 2px 5px #999;
+}
+.right{
+	margin-left: 450px;
+	margin-right: 20px;
+}
+.right h2{
+	padding-top: 80px;
+	font.size: 1.3em;
+	color: #4B4B4B;
+}
+.phrase{
+	height: 100px;
+	width: auto;
+}
+.phrase h2{
+	padding-top: 8px;
+	margin-right: 6px;
+	text-align: left;
+	font-size: 1em;
+	color: grey; 
+} 
+.separator{
+	margin-top: -40px;
+	border: 1px solid #C3C3C3;
+}
+.info{
+	margin-top: 10px;
+}
+.infoLeft{
+	margin-top: 0px; 
+}
+.infoLeft ul{
+	list-style: none;
+}
+.infoLeft li{
+	color: black;
+	font-family: Constantia;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+.buttom{
+	margin-top: 10px;
+}
+.buttom a{
+	text-decoration: none;
+	color: white;
+}
+.bioButtom{
+	border: 1px solid #ff4bd1;
+	padding: 10px;
+	border-bottom-width:2px;
+	background: #ff4bd1;
+}
+.infoRight{
+	position: relative;
+	left: 150px;
+	top: -245px;
+
+}
+.infoRight ul{
+	list-style: none;
+}
+.infoRight li{
+	color: black;
+	font-family: Constantia;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+/*Sección de redes en pie de tarjeta de presentación*/
+.footerCard ul{
+	list-style: none;
+	text-align: center;
+}
+.footerCard li {
+	/*position: relative;
+	left: 50px;*/
+	margin-left: 50px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/*Sección Abou Me*/
+.amTitle{
+	position: relative;
+	left: 23%;
+	display: inline-block;
+	text-align: center;
+}
+.bio{
+	position: relative;
+	right:  16%;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-left: 20%;
+}
+.content{
+	font-size: 15px;
+	line-height: 20px;
+	padding: 0 20px;
+	text-align: justify;
+}
+.bioLeft{
+	float: left;
+	width: 50%;
+}
+.bioRight{
+	float: right;
+	width: 50%;
+}
+
+.amTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.amTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.signature{
+	position: relative;
+	right: 30%;
+	padding-top: 15px;
+}
+
+.signature img{
+	position: relative;
+	margin-left: 700px;
+	margin-top: 30px;
+	padding: auto;
+	width: 100px;
+	height: 50px;
+}
+.signature a{
+	margin-left: 680px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: white;
+}
+.signaButtom{
+	border: 1px solid #4e89f5;
+	padding: 10px;
+	border-bottom-width:2px;
+	background: #4e89f5;
+}
+/*Sección Timeline V*/
+.timeTitle{
+	position: relative;
+	left: 23%;
+	display: inline-block;
+	text-align: center;
+}
+.timeTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.timeTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+
+.containerTL{
+	position: relative;
+	padding-top: 20px;
+	left: -5%;
+	text-align: center;
+}
+.containerTL h2{
+	font-size: 22px;
+}
+.timeline ul li{
+	list-style: none;
+	position: relative;
+	width: 6px;
+	margin: 0 auto;
+	padding-top: 50px;
+	background: #fff;
+}
+.timeline ul li::after{
+	content: '';
+	position: absolute;
+	left: 50%
+	bottom:0;
+	transform: translateX(-50%);
+	width: 30px;
+  	height: 30px;
+  	border-radius: 50%;
+  	background: inherit;
+}
+.timeline ul li div{
+	position: relative;
+	bottom: 0;
+	width: 400px;
+	padding: 15px;
+	background: #F45B69;
+}
+.timeline ul li div::before{
+	content: '';
+	position: absolute;
+	bottom: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+.timeline ul li:nth-child(odd) div{
+	left: 45px;
+}
+.timeline ul li:nth-child(even) div::before{
+	right: -15px;
+	border-width: 8px 0 8px 16px;
+	border-color: transparent transparent transparent #F45B69;
+}
+.timeline ul li:nth-child(odd) div::before{
+	left: -15px;
+	border-width: 8px 16px 8px 0;
+	border-color: transparent #F45B69 transparent transparent; 
+}
+.timeline ul li:nth-child(even) div{
+	left: -439px;
+}
+
+/*Sección Timeline H*/
+.timeTitle{
+	position: relative;
+	left: 23%;
+	display: inline-block;
+	text-align: center;
+}
+.timeTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.timeTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.area{
+	margin-left: 5%;
+	padding-top: 50px;
+}
+.timelineSchool{
+	display: inline-block;
+	height: 180px;
+	width: 250px;
+	margin-top: 20px; 
+	border:solid;
+	background-color: white;
+	margin-left: 30px;
+}
+
+.timelineSchool h3{
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.timelineSchool h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.timelineSchool p{
+	border-top: solid;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	background-color: pink;
+}
+/*Sección de skills*/
+.skillTitle{
+	position: relative;
+	left: 42%;
+	padding-top: 50px;
+	display: inline-block;
+	text-align: center;
+}
+.skillTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.skillTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.skills{
+	width: 55%;
+	display: flex;
+	line-height: 35px;
+	
+}
+.tpSkills{
+	margin-left: 23%;
+}
+.tpSkills h2{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.tpSkills p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 15px;
+	padding: 5px 10px;
+	color: black;
+}
+.tpSkills p span{
+	color: white;
+	background: #ff37dd;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+.expTitle{
+	position: relative;
+	left: 25%;
+	padding-top: 50px;
+	display: inline-block;
+	text-align: center;
+}
+.expTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.expTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.expContainer{
+	width: 55%;
+	display: flex;
+	position: relative;
+}
+.hab{
+	border-style: none;
+    border-width: 1px;
+    height: 350px;
+    width: 260px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.graph{
+	height: 95px;
+    width: 95px;
+    border-radius: 50px;
+    border-style: none;
+    margin-left: 15px;
+    background-color: blue;
+}
+.graph h2{
+	position: relative;
+	top: 110px;
+	left: 20px;
+	color: black;	
+}
+.circle{
+	height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    padding: 0px;
+    margin-left: 8px;
+    margin-top: -73px;
+}
+.circle h3{
+	font-size: 1.5em;
+    padding: 27px 0px 0px 0px;
+    color: #2c3f51;
+    text-align: center;
+    font-family: sans-serif;
+}
+/*Sección work process*/
+.workTitle{
+	position: relative;
+	left: 25%;
+	padding-top: 50px;
+	display: inline-block;
+	text-align: center;
+}
+.workTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.workTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.workContainer{
+	width: 85%;
+	display: inline-block;
+}
+.workContainer ul{
+	list-style: none;
+	text-align: center;
+}
+.workContainer li {
+
+	display: inline-block;
+}
+/*Sección de portfolio*/
+.portTitle{
+	position: relative;
+	left: 25%;
+	padding-top: 50px;
+	display: inline-block;
+	text-align: center;
+}
+.portTitle h2{
+	font-family: Constantia;
+	font-size: 30px;
+	padding: 5px 10px;
+	color: black;
+}
+.portTitle p{
+	text-align: center;
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: grey;
+}
+.gallery{
+	width: 85%;
+	display: inline-block;
+}
+.gallery ul{
+	list-style: none;
+	text-align: center;
+}
+.gallery li{
+	display: inline-block;
+	margin-left: 90px;
+	margin-top: 25px;
+}
+.gallery img{
+	width: 190px; 
+	height: 270px;
+}
+.gallery h3{
+	font-family: Constantia;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: #d006b7;
+}
+.gallery p{
+		font-family: Constantia;
+	font-size: 15px;
+	padding: 5px 10px;
+	color: grey;
+}
+.gallery img:hover{
+	background-color: white;
+	width: 190px; 
+	height: 270px;
+	border: 10px solid #555;
+	visibility: visible;
+}
+.start{
+	position: relative;
+	left: 25%;
+	display: inline-block;
+	text-align: center;
+}
+.start h2{
+	font-family: Constantia;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	padding: 5px 10px;
+	color: black;
+}
+.get{
+	color: white;
+	text-decoration: none;
+	padding:10px;
+	background-color: blue;
+	position: relative;
+	left: 10px;
+}
+/*Sección de contador*/
+.numb{
+	width: 25%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.numb p{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
